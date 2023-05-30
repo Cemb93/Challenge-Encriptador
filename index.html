@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,27 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Encriptador de texto</title>
 </head>
+
 <body>
   <header>
-    <h1 class="logo" >Challenge Encriptador</h1>
-    <main>
-      <section>
-        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí" ></textarea>
-        <div>
-          <h6 class="informacion" >Solo letras minúsculas y sin acentos</h6>
-        </div>
-        <div class="botones">
-          <button class="btn-encriptar" >Encriptar</button>
-          <button class="btn-desencriptar" >Desencriptar</button>
-        </div>
-      </section>
-      <section>
-        <textarea class="mensaje" cols="20" rows="10"></textarea>
-        <div>
-          <button class="copiar" >Copiar</button>
-        </div>
-      </section>
-    </main>
+    <h1 class="logo">Challenge Encriptador</h1>
   </header>
+  <main>
+    <section>
+      <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+      <div>
+        <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" onclick="btnEncriptar()" >Encriptar</button>
+        <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
+      </div>
+    </section>
+
+    <section>
+      <textarea class="mensaje" cols="20" rows="10"></textarea>
+      <div>
+        <button class="copiar">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <script src="encriptador.js" ></script>
 </body>
+
 </html>
